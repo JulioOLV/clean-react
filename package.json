@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/JulioOLV/clean-react#readme",
   "devDependencies": {
+    "@testing-library/react": "^12.1.3",
     "@types/axios": "^0.14.0",
     "@types/faker": "^5.1.2",
     "@types/jest": "^27.4.0",
