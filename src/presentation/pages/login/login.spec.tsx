@@ -25,7 +25,7 @@ const makeSut = (params?: SutParams): SutTypes => {
 
   validationStub.errorMessage = params?.validationError
   const sut = render(
-    <Router navigator={history} location="/">
+    <Router history={history}>
       <Login validation={validationStub} authentication={authenticationSpy} />
     </Router>
   )
@@ -87,7 +87,7 @@ describe('Login component', () => {
 
   beforeEach(() => {
     localStorage.clear()
-    history.back()
+    history.goBack()
   })
 
   test('Should start with initial state', () => {
@@ -198,7 +198,7 @@ describe('Login component', () => {
 
     expect(localStorage.setItem).toHaveBeenCalledWith('accessToken', authenticationSpy.account.accessToken)
 
-    expect(history.index).toBe(1)
+    expect(history.index).toBe(0)
     expect(history.location.pathname).toBe('/')
   })
 
