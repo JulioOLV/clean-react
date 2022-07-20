@@ -23,7 +23,6 @@ const Login: React.FC<Props> = ({ validation, authentication }: Props) => {
   })
 
   useEffect(() => {
-    // TODO: Ajustar para receber um builder de validation
     setState({
       ...state,
       emailError: validation?.validate('email', state.email),
