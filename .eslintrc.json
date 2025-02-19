@@ -4,10 +4,7 @@
       "version": "detect"
     }
   },
-  "extends": [
-    "standard-with-typescript",
-    "plugin:react/recommended"
-  ],
+  "extends": ["standard-with-typescript", "plugin:react/recommended"],
   "plugins": ["react"],
   "parserOptions": {
     "project": "./tsconfig.json"
@@ -19,6 +16,7 @@
     "@typescript-eslint/camelcase": "off",
     "@typescript-eslint/no-unused-vars": ["off"],
     "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error"
+    "react/jsx-uses-vars": "error",
+    "@typescript-eslint/member-delimiter-style": "off"
   }
 }
