@@ -81,5 +81,9 @@
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0",
     "recoil": "^0.4.1"
+  },
+  "engines": {
+    "node": "=16.20.2",
+    "npm": "=8.19.4"
   }
 }
