@@ -1,6 +1,6 @@
 import faker from 'faker'
 import { mockAccountModel, mockAuthentication } from '@/domain/test/mock-account'
-import { HttpPostClientSpy } from '@/data/test/mock-http-client'
+import { HttpPostClientSpy } from '@/data/test'
 import { RemoteAuthentication } from './remote-authentication'
 import { InvalidCredentialsError, UnexpectedError } from '@/domain/errors'
 import { HttpStatusCode } from '@/data/protocols/http'
