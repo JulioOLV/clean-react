@@ -220,4 +220,15 @@ describe('Login component', () => {
 
     Helper.testChildCount(sut, 'error-wrap', 1)
   })
+
+  test('Should got to login page', () => {
+    const { sut } = makeSut()
+
+    const loginLink = sut.getByTestId('login-link')
+
+    fireEvent.click(loginLink)
+
+    expect(history.index).toBe(1)
+    expect(history.location.pathname).toBe('/login')
+  })
 })
