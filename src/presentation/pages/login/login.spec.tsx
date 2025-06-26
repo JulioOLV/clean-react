@@ -186,9 +186,9 @@ describe('Login component', () => {
   test('Should got to signup page', () => {
     const { sut } = makeSut()
 
-    const register = sut.getByTestId('signup')
+    const signupLink = sut.getByTestId('signup-link')
 
-    fireEvent.click(register)
+    fireEvent.click(signupLink)
 
     expect(history.index).toBe(1)
     expect(history.location.pathname).toBe('/signup')
