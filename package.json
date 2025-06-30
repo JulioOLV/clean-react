@@ -10,6 +10,7 @@
     "test:staged": "npm test -- --findRelatedTests",
     "test:ci": "npm test -- --coverage",
     "test:coveralls": "npm run test:ci && coveralls < coverage/lcov.info",
+    "test:cypress": "cypress open",
     "lint": "eslint"
   },
   "repository": {
@@ -28,6 +29,7 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^12.1.0",
     "@types/axios": "^0.14.0",
+    "@types/cypress": "^0.1.6",
     "@types/faker": "^5.1.2",
     "@types/jest": "^27.0.1",
     "@types/node": "^16.9.1",
@@ -61,7 +63,7 @@
     "jest-localstorage-mock": "^2.4.3",
     "lint-staged": "^11.1.2",
     "mini-css-extract-plugin": "^2.3.0",
-    "node-sass": "^6.0.1",
+    "sass": "^1.89.2",
     "sass-loader": "^12.1.0",
     "start-server-and-test": "^1.11.4",
     "style-loader": "^3.2.1",
@@ -81,9 +83,5 @@
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0",
     "recoil": "^0.4.1"
-  },
-  "engines": {
-    "node": "=16.20.2",
-    "npm": "=8.19.4"
   }
 }
