@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
-    "types": ["cypress"]
+    "types": ["cypress"],
+    "esModuleInterop": true,
   },
   "include": [
     "../../../../node_modules/cypress",
     "./*/*.ts",
-  ]
+  ],
 }
